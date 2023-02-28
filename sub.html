@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컬리-마켓컬리/뷰티컬리</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    
+    <style>
+      #sub {width:1100px; height:14000px; margin:0 auto;}
+      #sub_main {width:1100px; height:1200px; margin:0 auto;}
+      #sub_main1 {width:500px; height:1150px; float:left; margin:50px 0 0 0px;}
+      #sub_main1_img {width:400px; height:500px; margin:0 auto;}
+      #sub_main2 {width:550px; height:1150px; float:left; margin:50px 0 0 50px;}
+      .sp1 {font-size:15px; color:#999; line-height:30px;}
+      .main_title > h3 {font-size:30px; color:#000; line-height:50px; font-weight:bold;}
+      .main_title > img {float:right;}
+      .sp2 {font-size:15px; color:#b5b5b5; line-height:19px; padding:15px 0px;}
+      .sp3 {font-size:30px; color:#000; line-height:30px; padding:0 0 10px 0px;}
+      .sp4 {font-size:15px; color:#5f0080; padding:0 0 30px 0px;}
+      #main_tablebox table td:first-of-type {width:150px; border-bottom:1px solid #c1c1c1;}
+      #main_tablebox table td:last-of-type {width:400px; border-bottom:1px solid #c1c1c1;}
+      #main_tablebox > table {display:inline-block; margin:0 auto; border-top:1px solid #c1c1c1; line-height:30px; width:550px; font-size:14px;}
+      #main_tablebox > table, tr, td {margin:0; padding:10px 0px;}
+      
+
+
+
+      
+      #sub_nav1 {width:1100px; height:100px; margin:0 auto;}
+      #sub_nav1 ul {width:1100px; height:50px; margin:40px auto 0px;}
+      #sub_nav1 ul > li {width:270px; height:100%; background-color:#eee; float:left; text-align:center; padding:15px 0 0 0px; border:1px solid #ddd; border-bottom:1px solid #000; font-size:20px; margin:0 auto;} 
+      #sub_nav1 > ul > li:first-child {background-color:#fff; border:1px solid #000; border-bottom:none;}
+
+      #sub_nav2 {width:1100px; height:100px; margin:0 auto; padding:100px 0 0 0px;}
+      #sub_nav2 ul {width:1100px; height:50px; margin:40px auto 0px;}
+      #sub_nav2 ul > li {width:270px; height:100%; background-color:#eee; float:left; text-align:center; padding:15px 0 0 0px; border:1px solid #ddd; border-bottom:1px solid #000; font-size:20px; margin:0 auto;} 
+      #sub_nav2 > ul > li:nth-child(2) {background-color:#fff; border:1px solid #000; border-bottom:none;}
+
+      #sub_nav3 {width:1100px; height:100px; margin:0 auto; padding:100px 0 0 0px;}
+      #sub_nav3 ul {width:1100px; height:50px; margin:40px auto 0px;}
+      #sub_nav3 ul > li {width:270px; height:100%; background-color:#eee; float:left; text-align:center; padding:15px 0 0 0px; border:1px solid #ddd; border-bottom:1px solid #000; font-size:20px; margin:0 auto;} 
+      #sub_nav3 > ul > li:nth-child(3) {background-color:#fff; border:1px solid #000; border-bottom:none;}
+
+
+
+
+      .goods_wrap {width:1100px; height:3500px; margin:0 auto; font-weight:300;}
+      .goods_intro {width:1100px; height:1200px;}
+      .goods_intro > .pic > img {width:1100px; height:650px;}
+      .context_last {text-align:center;}
+      .context_last > h3 {font-size:38px; color:#000; padding-bottom:40px; padding-top:40px; font-weight:500; border-bottom:1px solid #c1c1c1; line-height:50px;}
+      .context_last > h3 > small {font-size:24px;}
+      .context_last > p {text-align:left; font-size:18px; color:#4c4c4c; margin-top:28px; line-height:32px;}
+      .goods_point > .pic > img {width:1100px; height:350px;}
+      .goods_point > h3 {width:1100px; position:relative; font-size:50px; padding-bottom:50px;}
+      .goods_point > h3 > span {display:inline-block; margin:50px 0 0 350px;}
+      .goods_pick > h3 {width:1100px; position:relative; font-size:50px; padding-bottom:50px;}
+      .goods_pick > h3 > p {font-size:20px; line-height:50px;}
+      .goods_pick > h3 > p > span {font-size:30px; font-weight:bold; margin:40px 0 0 0px;}
+      .goods_pick > h3 > span {display:inline-block; margin:50px 0 0 450px;}
+      .goods_pick > .pic > img {width:1100px; height:650px; padding-bottom:30px;}
+      .goods_tip > h3 > span {display:inline-block; margin:50px 0 0 100px; width:1100px; position:relative; font-size:50px; padding:50px;}
+      .context_tip {width:1100px; height:400px; border:1px solid #4c4c4c; box-sizing:border-box;}
+      .words {margin:50px 0 30px 50px; font-size:15px; line-height:30px;}
+      .words > span {font-size:25px; line-height:50px; font-weight:bold;}
+
+      
+      #detail {width:1100px; height:4600px;}
+      #detail > .detail_img > img {width:1100px; height:950px; padding:100px 0 0 0px;}
+      .detail_info > h3 {font-size:30px; margin:60px 450px;}
+      .detail_info > table {display:inline-block; margin:0 auto; line-height:20px; font-size:14px;}
+      .detail_info > table, tr, td {padding:10px 0 10px 10px;}
+      
+      .info_td1 {width:200px; background-color:#f7f7f7;}
+      .info_td2 {width:350px;}
+      
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header> 
+      <div id="center">
+        <div id="logo">
+          <a href="#"><img src="https://sudkwld.github.io/MarketKurly/img_1/ico_logo.png" alt="로고이미지"></a>
+        </div>
+
+        <div id="center_text">
+          <ul>
+            <li><a href="#">마켓컬리</a></li>
+            <li>|</li>
+            <li><span><a href="#">뷰티컬리</a></span></li>
+          </ul>
+          <form>
+            <input type="text" placeholder="검색어를입력해주세요." class="btn_text">
+            <input type="image" src="img/icon_search.png" alt="서치아이콘" class="btn_search">
+          </form>
+        </div>
+      </div>
+      <div id="login">
+        <ul>
+          <li><span><a href="#">회원가입</a></span></li>
+          <li>|</li>
+          <li><a href="#">로그인</a></li>
+          <li>|</li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </div>
+      <nav>
+        <div id="nav1">
+          <ul>
+            <li><a href="#">카테고리</a></li>
+          </ul>
+          </div>
+
+        <div id="nav2">
+        <ul>
+          <li><a href="#">신상품</a></li>
+          <li><a href="#">베스트</a></li>
+          <li><a href="#">알뜰쇼핑</a></li>
+          <li><a href="#">특가/혜택 </a></li>
+        </ul>
+        </div>
+
+        <div id="nav_icon">
+          <div class="nav_box">
+            <a href="#"><img src="img/nav_icon3.png" alt="네비아이콘3"></a>
+          </div>
+          <div class="nav_box">
+            <a href="#"><img src="img/nav_icon2.png" alt="네비아이콘2"></a>
+          </div>
+          <div class="nav_box">
+            <a href="#"><img src="img/nav_icon1.png" alt="네비아이콘1"></a>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <div id="sub">
+        <div id="sub_main">
+            <div id="sub_main1">
+              <div id="sub_main1_img">
+                <img src="img/first_product3.jpg" alt="서브메인이미지">
+              </div>
+            </div>
+            <div id="sub_main2">
+              <p class="sp1">샛별배송</p>
+              <div class="main_title">
+                <img src="img/main_title.png" alt="타이틀아이콘">
+                <h3>[하코야] 와카메 어묵탕 전골</h3>  
+              </div>
+              <p class="sp2">집에서도 전문 일식점 느낌 그대로</p>
+              <p class="sp3">10,900원</p>
+              <p class="sp4">로그인 후, 적립 혜택이 제공됩니다.</p>
+              <div id="main_tablebox">
+              <table>
+                  <tr>
+                    <td>배송</td>
+                    <td>샛별배송<br>23시 전 주문 시 내일 아침 7시 전 도착(대구·부산·울산 샛별배송 운영시간 별도 확인)</td>
+                  </tr>
+                  <tr>
+                    <td>판매자</td>
+                    <td>컬리</td>
+                  </tr>
+                  <tr>
+                    <td>포장타입</td>
+                    <td>냉동(종이포장) 택배배송은 에코 포장이 스티로폼으로 대체됩니다.</td>
+                  </tr>
+                  <tr>
+                    <td>판매단위</td>
+                    <td>1팩</td>
+                  </tr>
+                  <tr>
+                    <td>중량/용량</td>
+                    <td>704g</td>
+                  </tr>
+                  <tr>
+                    <td>원산지</td>
+                    <td>상품설명/상세정보 참조</td>
+                  </tr>
+                  <tr>
+                    <td>알레르기정보</td>
+                    <td>-계란,대두,밀,우유 함유 -본 제품은 쇠고기,돼지고기,닭고기,새우,게,오징어,고들어,조개류(굴,전복,홍합 포함),매밀,호두,땅콩,잣,토마토,복숭아,아황산류를 사용한 제품과 동일시설에서 제조하고 있습니다.</td>
+                  </tr>
+                  <tr>
+                    <td>유통이간(또는 소비기한)정보</td>
+                    <td>제품 별도표기일까지</td>
+                  </tr>
+                  <tr>
+                    <td>상품선택</td>
+                    <td>[하코야] 와카메 어묵탕 전골KIT</td>
+                  </tr>
+                  <tr></tr>
+              </table>
+              </div>
+            </div>
+        </div >
+        <div id="sub_nav1">
+          <ul>
+            <li>상품설명</li>
+            <li>상세정보</li>
+            <li>후기(5,503)</li>
+            <li>문의</li>
+          </ul>
+        </div>
+          <div class="goods_wrap">
+            <div class="goods_intro">
+              <div class="pic">
+                <img src="img/goods_intro.webp" alt="굿즈인트로이미지">
+              </div>
+              <div class="context_last">
+                <h3>
+                  <small>집에서도 전문 일식점 느낌 그대로</small>
+                  <br>
+                  " [하코야] "
+                  <br>
+                  " 와카메 어묵탕 전골 KIT "
+                </h3>
+                <p class="words">"다채로운 메뉴에 일본 정통 레시피를 녹여내는 일식 브랜드, 하코야가 선보이는
+                  와카메 어묵탕 전골 키트를 만나보세요. 다채로운 4종의 어묵에 더해 쯔유 소스와 고추,
+                  각종 사리까지 완벽한 구성으로 담은 상품인데요. 갈치, 실꼬리등, 명태 등 질 좋은 
+                  어육을 사용해 만든 어묵은 생선 본연의 맛이 진하게 느껴지고요. 가쓰오부시 농축액을 함유한 소스는 
+                  전문 일식점에서 맛보았던 깊은 풍미를 품고 있답니다. 감칠맛이 가득 밴 조림무와 가래떡도
+                  뺴놓을 수 없는 별미이지요. 풍성한 건더기를 고루 즐기다, 우동 사리를 넣고
+                  깔끔하게 마무리해 보세요."
+                </p>
+              </div>
+            </div>
+            <div class="goods_point">
+              <h3>
+                <span>Kurly's Check Point</span>
+              </h3>
+              <div class="pic">
+                <img src="img/goods_point.webp" alt="굿즈포인트이미지">
+              </div>
+            </div>
+            <div class="goods_pick">
+              <h3>
+                <span>Kurly's Pick</span>
+              </h3>
+                <div class="pic">
+                  <img src="img/goods_pick.webp" alt="굿즈픽이미지">
+                </div>
+              <h3>
+                <p class="words">
+                  <span>와카메 어묵탕 전골 KIT</span>
+                  <br>
+                  <b>·중량</b>
+                    : "1팩(704g)"
+                  <br>
+                  <b>·구성</b>
+                    : "➀ 모듬 어묵 ➁ 조림 무 ➂ 우동사리 ➃ 떡과 고추 ➄ 쯔유소스"
+                  <br>
+                  <b>·특징</b>
+                    : "일식 정통 어묵탕을 손쉽게 완성할 수 있는 키트입니다."
+                </p>
+              </h3>
+            </div>
+            <div class="goods_tip">
+              <h3>
+                <span>Kurly's Tip</span>
+                <div class="tip_box">
+                  <div class="context_tip">
+                    <p class="words">
+                      <span>보관법</span>
+                      <br>
+                      <b>·</b>
+                      -18℃ 이하에서 냉동 보관하세요.
+                    </p>
+                    <p class="words">
+                      <span>조리법</span>
+                      <br>
+                      1. 냄비에 물 850ml를 넣은 뒤, 동본된 쯔유와 조림무를 넣고 끓여주세요.
+                      <br>
+                      2. 국물이 끓기 시작하면 어묵과 나머지 재료를 넣고 약 10분간 끓여주세요.
+                      <br>
+                      3. 어묵을 다 드신 후 우동 사리를 추가해 추가로 끓여 드세요.
+                      <br>
+                      <b>Tip.</b>
+                      기호에 따라 곤약 묵을 추가해 즐겨보세요. 한결 다채로운 식감으로 즐길 수 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </h3>
+            </div>
+          </div>
+          <div id="sub_nav2">
+            <ul>
+              <li>상품설명</li>
+              <li>상세정보</li>
+              <li>후기(5,503)</li>
+              <li>문의</li>
+            </ul>
+          </div>
+          <div id="detail">
+            <div class="detail_img">
+              <img src="img/detail_img.webp" alt="디테일이미지">
+            </div><hr>
+            <div class="detail_info">
+              <h3>상품고시정보</h3>
+              <table>
+                <tr>
+                  <td class="info_td1">제품명</td>
+                  <td class="info_td2">상품설명 및 상품이미지 참조</td>
+                  <td class="info_td1">식품의 유형</td>
+                  <td class="info_td2">상품설명 및 상품이미지 참조</td>
+                </tr>
+                <tr>
+                  <td class="info_td1">생산자 및 소재자(수입품의경우 생산자,수입자 및 제조국)</td>
+                  <td class="info_td2">상품설명 및 상품이미지 참조</td>
+                  <td class="info_td1">제조연월일,소비기한 또는 품질유지기한</td>
+                  <td class="info_td2">상품설명 및 상품이미지 참조</td>
+                </tr>
+                <tr>
+                  <td class="info_td1">포장단위별 내용물의 용량(중량),수량</td>
+                  <td class="info_td2">상품설명 및 상품이미지 참조</td>
+                  <td class="info_td1">원재료명(농수산물의 원산지 표시 등에 관한 법률에 따른 원산지 표시포함)및 함량(원재료 함량 표시대상 식품에 한함)</td>
+                  <td class="info_td2">상품설명 및 상품이미지 참조</td>
+                </tr>
+                <tr>
+                  <td class="info_td1">영양성분(영양성분 표시대상 식품에 한함)</td>
+                  <td class="info_td2">상품설명 및 상품이미지 참조</td>
+                  <td class="info_td1">유전자변형식품에 해당하는 경우의 표시</td>
+                  <td class="info_td2">상품설명 및 상품이미지 참조</td>
+                </tr>
+                <tr>
+                  <td class="info_td1">소비자 안전을 위한 주의사항(식품 등의 표시 광고에 관한 법률 시행규칙 제5조 및 [별표2]에 따른 표시사항을 말함)</td>
+                  <td class="info_td2">상품설명 및 상품이미지 참조</td>
+                  <td class="info_td1">수입식품의 경우 "수입식품 안전관리 특별법에 따른 수입신고를 필함"의 문구</td>
+                  <td class="info_td2">상품설명 및 상품이미지 참조</td>
+                </tr>
+                <tr>
+                  <td class="info_td1">소비자 상담 관련 전화번호</td>
+                  <td class="info_td2">컬리 고객행복센터(1644-1107)</td>
+                  <td class="info_td1"></td>
+                  <td class="info_td2"></td>
+                </tr>
+              </table>
+            </div>
+            <div id="sub_nav3">
+              <ul>
+                <li>상품설명</li>
+                <li>상세정보</li>
+                <li>후기(5,503)</li>
+                <li>문의</li>
+              </ul>
+            </div>
+            <div class="review">
+              
+            </div>
+
+          </div>
+    </div>
+
+    <footer>
+      <div id="footer_first">
+        <div class="footer_box">
+          <h3>고객행복센터</h3>
+          <h5><span>1644-1107</span>월~토요일 오전7시-오후6시</h5>
+          <div class="footer_box3">
+            <button>카카오톡 문의</button>
+            <p>월~토요일|오전7시-오후6시<br>일/공휴일|오전7시-오후1시</p>
+          </div>
+          <div class="footer_box3">
+            <button>1:1 문의</button>
+            <p>365일<br>고객센터 운영시간에 순차적으로 답변드리겠습니다.</p>
+          </div>
+          <div class="footer_box3">
+            <button>대량주문 문의</button>
+            <p>월~금요일|오전9시-오후6시<br>점심시간|낮12시-오후1시</p>
+          </div>
+          <pre>비회원 문의 : help@kurlycorp.com<br>비회원 대량주문 문의 :kurlygift@kurlycorp.com</pre>
+        </div>
+        <div class="footer_box">
+          <ul>
+            <li><a href="#">컬리소개</a></li>
+            <li><a href="#">컬리소개영상</a></li>
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용안내</a></li>
+          </ul>
+          <p>법인명(상호):주식회사 컬리|사업자등록번호:261-81-23567사업자정보확인<br>통신판매업:제2018-서울강남-01646호|개인정보보호책임자:이원준<br>주소:서울특별시 강남구 테헤란로133,18층(역삼동)|대표이사:김슬아<br>입점문의:입점문의하기|제휴문의:business@kurlycorp.com<br>채용문의:recruit@kurlycorp.com<br>팩스:070-7500-6098</p>
+          <div class="footer_icon1">
+            <a href="#"><img src="img/footer_icon1.jpg" alt="하단아이콘1"></a>
+          </div>
+          <div class="footer_icon2">
+            <a href="#"><img src="img/footer_icon2.jpg" alt="하단아이콘2"></a>
+          </div>
+          <div class="footer_icon3">
+            <a href="#"><img src="img/footer_icon3.jpg" alt="하단아이콘3"></a>
+          </div>
+          <div class="footer_icon4">
+            <a href="#"><img src="img/footer_icon4.jpg" alt="하단아이콘4"></a>
+          </div>
+          <div class="footer_icon5">
+            <a href="#"><img src="img/footer_icon5.jpg" alt="하단아이콘5"></a>
+          </div>
+        </div>
+        <div id="footer_box2">
+            <div class="footer_box2_icon">
+              <a href="#"><img src="img/footer_box2_icon1.jpg" alt="하단박스아이콘1"></a>
+            </div>
+            <p>[인증범위]컬리 쇼핑몰 서비스 개발, 운영<br>
+              (심사받지 않은 물리적 인프라 제외)<br>
+              [유효기간]2022.01.19~2025.01.18</p>
+
+            <div class="footer_box2_icon">
+              <a href="#"><img src="img/footer_box2_icon2.jpg" alt="하단박스아이콘2"></a>
+            </div>
+            <p>개인정보보호 우수 웹사이트<br>
+              개인정보처리시스템인증(ePRIVACYPLUS)<br>.</p>
+
+            <div class="footer_box2_icon">
+              <a href="#"><img src="img/footer_box2_icon3.jpg" alt="하단박스아이콘3"></a>
+            </div>
+            <p>토스페이먼츠 구매안전(에스크로)<br>
+              서비스를 이용하실 수 있습니다.<br>.</p>
+
+            <div class="footer_box2_icon">
+              <a href="#"><img src="img/footer_box2_icon4.jpg" alt="하단박스아이콘4"></a>
+            </div>
+            <p>고객님이 현금으로 결제한 금액에 대해 우리은행과<br>
+              채무지급보증 계약을 체결하여 안전거래를 보장하고<br>
+              있습니다.</p>
+
+            
+        </div>
+          
+        </div>
+      </div>
+
+      <div id="footer_last">
+        <p>컬리에서 판매되는 상품중에는 컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.<br>
+        마켓플레이스(오픈마켓) 상품의 경우 컬러는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.<br><br>
+          @ KURLY.CORP.ALL.RIGHTS RESERVED</p>
+      </div>
+
+    </footer>
+</body>
+</html>
